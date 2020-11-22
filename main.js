@@ -1,10 +1,6 @@
 const axios = require("axios")
 
-const poland = require('./countries/poland')
-const global = require('./countries/global')
-const ireland = require('./countries/ireland')
-
-const countries = [poland, global, ireland]
+const countries = require('./countries')
 
 const waitTime = 1000
 
