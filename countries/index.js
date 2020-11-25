@@ -4,8 +4,8 @@ const ireland = require('./ireland')
 const sweden = require('./sweden')
 
 module.exports = [
-  poland,
   global,
+  poland,
   ireland,
   sweden
 ]

@@ -1,16 +1,6 @@
 module.exports = {
   name: 'Poland',
   sites: [
-    "https://www.facebook.com/saladstory",
-    "https://www.facebook.com/tarczynskipl/",
-    "https://www.facebook.com/grycan/",
-    "https://www.facebook.com/BigMilkPL/",
-    "https://www.facebook.com/CarrefourPolska",
-    "https://www.facebook.com/BiedronkaCodziennie",
-    "https://www.facebook.com/zabkapolska",
-    "https://www.facebook.com/orlenstopcafe",
-    "https://www.facebook.com/ORLENOfficial/",
-    "https://www.facebook.com/bp.polska/",
     "https://www.facebook.com/ShellPolska/",
     "https://www.facebook.com/EtnoCafeKawiarnie",
     "https://www.facebook.com/mlekpol",
@@ -22,6 +12,16 @@ module.exports = {
     "https://www.facebook.com/kaufland.polska",
     "https://www.facebook.com/WawelSlodycze",
     "https://www.facebook.com/majonezkielecki",
+    "https://www.facebook.com/saladstory",
+    "https://www.facebook.com/tarczynskipl/",
+    "https://www.facebook.com/grycan/",
+    "https://www.facebook.com/BigMilkPL/",
+    "https://www.facebook.com/CarrefourPolska",
+    "https://www.facebook.com/BiedronkaCodziennie",
+    "https://www.facebook.com/zabkapolska",
+    "https://www.facebook.com/orlenstopcafe",
+    "https://www.facebook.com/ORLENOfficial/",
+    "https://www.facebook.com/bp.polska/",
     "https://www.facebook.com/PizzaDominiumPL",
     "https://www.facebook.com/restauracjaThaiWok",
     "https://www.facebook.com/pizzahutpolska",
@@ -48,7 +48,8 @@ module.exports = {
     "https://www.facebook.com/GalbaniPolska"
   ],
   words: [
-    "wegański", "wegańska", "wegańskie", "weganie", "wegan", "weganizm", "wegańskich", "roślinny", "roślinna", "roślinne", "roślinnych", "wege",
-    "Wegański", "Wegańska", "Wegańskie", "Weganie", "Wegan", "Weganizm", "Wegańskich", "Roślinny", "Roślinna", "Roślinne", "Roślinnych", "Wege"
+    "wegański", "wegańska", "wegańskie", "weganie", "wegan", "weganizm", "wegańskich", "roślinny", "roślinna", "roślinne", "roślinnych", 
+    "Wegański", "Wegańska", "Wegańskie", "Weganie", "Wegan", "Weganizm", "Wegańskich", "Roślinny", "Roślinna", "Roślinne", "Roślinnych", 
+    "WEGAŃSKI", "WEGAŃSKA", "WEGAŃSKIE", "WEGANIE", "WEGAN", "WEGANIZM", "WEGAŃSKICH", "ROŚLINNY", "ROŚLINNA", "ROŚLINNE", "ROŚLINNYCH"
   ]
 }
