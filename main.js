@@ -2,23 +2,23 @@ const axios = require("axios")
 const fs = require("fs")
 
 const countries = require('./countries')
-const helpers = require('./helpers')
+const {
+  getFilenameDate, 
+  getDate,
+  removeTags,
+  findTextBehindIndex,
+  findTextAfterIndex,
+  findAbsoluteTextAfterIndex,
+  getNextWordIndex
+} = require('./globalHelpers')
 
 const waitTime = 700
 
 const global = ["Vegan", "vegan", "VEGAN", "plant-based", "plantbased", "Plant-based", "Plantbased", "Veggie", "veggie", "VEGGIE"]
 
-const filename = __dirname  + "\\logs\\log_" + helpers.getFilenameDate() + ".txt"
+const filename = __dirname  + "\\logs\\log_" + getFilenameDate() + ".txt"
 
 const addText = (text) => fs.appendFileSync(filename, text)
-
-const findTextBehindIndex = (html, index, text) => html.substring(0, index).lastIndexOf(text)
-const findTextAfterIndex = (html, index, text) => html.substring(index).indexOf(text)
-const findAbsoluteTextAfterIndex = (html, index, text) => html.substring(0, index).length + html.substring(index).indexOf(text)
-const getNextWordIndex = (html, index, word) => {
-  const subsetRight = html.substring(index)
-  return html.substring(0, index).length + subsetRight.indexOf(word)
-}
 
 // Runs multiple checks for the html with a single word
 const checksPass = (html, wordIndex) => {
@@ -53,7 +53,7 @@ const performCheck = (html, words) => {
         const divTagCloseIndex = findAbsoluteTextAfterIndex(html, divTagOpenIndex, '</div')
         return {
           word,
-          paragraph: helpers.removeTags(html.substring(divTagOpenIndex, divTagCloseIndex))
+          paragraph: removeTags(html.substring(divTagOpenIndex, divTagCloseIndex))
         }
       }
       const newWordIndex = getNextWordIndex(html, wordIndex, word)
@@ -106,7 +106,7 @@ const run = (countryIndex, siteIndex) => {
   }, waitTime)
 }
 
-fs.writeFile(filename, 'Results ran at ' + helpers.getDate() + '\r\n', (err) => {
+fs.writeFile(filename, 'Results ran at ' + getDate() + '\r\n', (err) => {
   if (err) console.log(err)
   else console.log("File is created")
 })
