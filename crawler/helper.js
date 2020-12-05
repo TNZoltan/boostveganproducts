@@ -11,7 +11,7 @@ const {
 const isQualifying = () => true
 const getPageLinks = (html) => {
   let i = 0
-  const ulTagOpenIndex = html.indexOf('uiList')
+  const ulTagOpenIndex = html.indexOf('uiList uiCollapsedList uiCollapsedListHidden')
   const ulTagCloseIndex = findTextAfterIndex(html, ulTagOpenIndex, '</ul')
   const component = html.substring(ulTagOpenIndex, ulTagCloseIndex)
   const linksOpenIndices = indexes(component, 'https:')
