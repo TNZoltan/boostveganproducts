@@ -45,7 +45,8 @@ module.exports = {
     "https://www.facebook.com/KinderPoland",
     "https://www.facebook.com/HariboPolska",
     "https://www.facebook.com/LindtPolska",
-    "https://www.facebook.com/GalbaniPolska"
+    "https://www.facebook.com/GalbaniPolska",
+    "https://www.facebook.com/RossmannPL"
   ],
   words: [
     "wegański", "wegańska", "wegańskie", "weganie", "wegan", "weganizm", "wegańskich", "roślinny", "roślinna", "roślinne", "roślinnych", 

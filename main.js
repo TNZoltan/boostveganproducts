@@ -10,7 +10,6 @@ const global = ["Vegan", "vegan", "VEGAN", "plant-based", "plantbased", "Plant-b
 
 const filename = __dirname  + "\\logs\\log_" + helpers.getFilenameDate() + ".txt"
 
-const addNewline = () => fs.appendFileSync(filename, "\r\n")
 const addText = (text) => fs.appendFileSync(filename, text)
 
 const findTextBehindIndex = (html, index, text) => html.substring(0, index).lastIndexOf(text)
@@ -31,6 +30,10 @@ const checksPass = (html, wordIndex) => {
   const liTagCloseIndex = findTextAfterIndex(html, liTagOpenIndex, '</li')
   const isComment = liTagCloseIndex > wordIndex && liTagOpenIndex !== -1
   if (isComment) return false
+  const scriptTagOpenIndex = findTextBehindIndex(html, wordIndex, '<script')
+  const scriptTagCloseIndex = findTextAfterIndex(html, scriptTagOpenIndex, '</script>')
+  const isScript = scriptTagCloseIndex > wordIndex && scriptTagOpenIndex !== -1
+  if (isScript) return false
   const divTagOpenIndex = findTextBehindIndex(html, wordIndex, '<div')
   const isInBody = divTagOpenIndex < 0
   if (isInBody) return false
@@ -67,10 +70,11 @@ const fetchUrl = (url, words) => {
   return axios.get(url).then(res => {
     console.log(`Checking ${url}`)
     const html = res.data.toString()
-    const globalResult = performCheck(html, global)
+    const strippedHtml = html.substring(html.indexOf('PagesProfileHomePrimaryColumnPagelet'))
+    const globalResult = performCheck(strippedHtml, global)
     if (globalResult) return globalResult
     if (words) {
-      const localResult = performCheck(html, words)
+      const localResult = performCheck(strippedHtml, words)
       if (localResult) return localResult
     }
     return false
@@ -79,14 +83,10 @@ const fetchUrl = (url, words) => {
 
 const saveData = (result, url, countryName) => {
   console.log(`Word ${result.word} was found on ${url} from ${countryName}`)
-  addNewline()
-  addText(' - - - - - - - - ')
-  addNewline()
-  addText(`Word: ${result.word}`)
-  addNewline()
-  addText(`URL: ${url} from ${countryName}`)
-  addNewline()
-  addText(`"${result.paragraph}"`)
+  addText(' - - - - - - - - \r\n')
+  addText(`Word: ${result.word}\r\n`)
+  addText(`URL: ${url} from ${countryName}\r\n`)
+  addText(`"${result.paragraph}"\r\n`)
 }
 
 const run = (countryIndex, siteIndex) => {
@@ -106,9 +106,8 @@ const run = (countryIndex, siteIndex) => {
   }, waitTime)
 }
 
-fs.writeFile(filename, 'Results ran at ' + helpers.getDate(), (err) => {
+fs.writeFile(filename, 'Results ran at ' + helpers.getDate() + '\r\n', (err) => {
   if (err) console.log(err)
   else console.log("File is created")
 })
-addNewline()
 run(0,0)
