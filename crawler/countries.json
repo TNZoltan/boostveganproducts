@@ -1,0 +1,978 @@
+[
+  {
+      "country": "Afghanistan",
+      "start": 37172386
+  },
+  {
+      "country": "Albania",
+      "start": 2866376
+  },
+  {
+      "country": "Algeria",
+      "start": 42228429
+  },
+  {
+      "country": "American Samoa",
+      "start": 55465
+  },
+  {
+      "country": "Andorra",
+      "start": 77006
+  },
+  {
+      "country": "Angola",
+      "start": 30809762
+  },
+  {
+      "country": "Anguilla",
+      "start": 15094
+  },
+  {
+      "country": "Antarctica",
+      "start": 1106
+  },
+  {
+      "country": "Antigua and Barbuda",
+      "start": 96286
+  },
+  {
+      "country": "Argentina",
+      "start": 44494502
+  },
+  {
+      "country": "Armenia",
+      "start": 2951776
+  },
+  {
+      "country": "Aruba",
+      "start": 105845
+  },
+  {
+      "country": "Australia",
+      "start": 24982688
+  },
+  {
+      "country": "Austria",
+      "start": 8840521
+  },
+  {
+      "country": "Azerbaijan",
+      "start": 9939800
+  },
+  {
+      "country": "Bahamas",
+      "start": 385640
+  },
+  {
+      "country": "Bahrain",
+      "start": 1569439
+  },
+  {
+      "country": "Bangladesh",
+      "start": 161356039
+  },
+  {
+      "country": "Barbados",
+      "start": 286641
+  },
+  {
+      "country": "Belarus",
+      "start": 9483499
+  },
+  {
+      "country": "Belgium",
+      "start": 11433256
+  },
+  {
+      "country": "Belize",
+      "start": 383071
+  },
+  {
+      "country": "Benin",
+      "start": 11485048
+  },
+  {
+      "country": "Bermuda",
+      "start": 63973
+  },
+  {
+      "country": "Bhutan",
+      "start": 754394
+  },
+  {
+      "country": "Bolivia",
+      "start": 11353142
+  },
+  {
+      "country": "Bosnia and Herzegovina",
+      "start": 3323929
+  },
+  {
+      "country": "Botswana",
+      "start": 2254126
+  },
+  {
+      "country": "Bouvet Island",
+      "start": 0
+  },
+  {
+      "country": "Brazil",
+      "start": 209469333
+  },
+  {
+      "country": "British Indian Ocean Territory",
+      "start": 0
+  },
+  {
+      "country": "Brunei",
+      "start": 428962
+  },
+  {
+      "country": "Bulgaria",
+      "start": 7025037
+  },
+  {
+      "country": "Burkina Faso",
+      "start": 19751535
+  },
+  {
+      "country": "Burundi",
+      "start": 11175378
+  },
+  {
+      "country": "Cambodia",
+      "start": 16249798
+  },
+  {
+      "country": "Cameroon",
+      "start": 25216237
+  },
+  {
+      "country": "Canada",
+      "start": 37057765
+  },
+  {
+      "country": "Cape Verde",
+      "start": 543767
+  },
+  {
+      "country": "Cayman Islands",
+      "start": 64174
+  },
+  {
+      "country": "Central African Republic",
+      "start": 4666377
+  },
+  {
+      "country": "Chad",
+      "start": 15477751
+  },
+  {
+      "country": "Chile",
+      "start": 18729160
+  },
+  {
+      "country": "China",
+      "start": 1392730000
+  },
+  {
+      "country": "Christmas Island",
+      "start": 1402
+  },
+  {
+      "country": "Cocos (Keeling) Islands",
+      "start": 596
+  },
+  {
+      "country": "Colombia",
+      "start": 49648685
+  },
+  {
+      "country": "Comoros",
+      "start": 832322
+  },
+  {
+      "country": "Congo",
+      "start": 5244363
+  },
+  {
+      "country": "Cook Islands",
+      "start": 17379
+  },
+  {
+      "country": "Costa Rica",
+      "start": 4999441
+  },
+  {
+      "country": "Croatia",
+      "start": 4087843
+  },
+  {
+      "country": "Cuba",
+      "start": 11338138
+  },
+  {
+      "country": "Cyprus",
+      "start": 1189265
+  },
+  {
+      "country": "Czech Republic",
+      "start": 10629928
+  },
+  {
+      "country": "Denmark",
+      "start": 5793636
+  },
+  {
+      "country": "Djibouti",
+      "start": 958920
+  },
+  {
+      "country": "Dominica",
+      "start": 71625
+  },
+  {
+      "country": "Dominican Republic",
+      "start": 10627165
+  },
+  {
+      "country": "East Timor",
+      "start": 1267972
+  },
+  {
+      "country": "Ecuador",
+      "start": 17084357
+  },
+  {
+      "country": "Egypt",
+      "start": 98423595
+  },
+  {
+      "country": "El Salvador",
+      "start": 6420744
+  },
+  {
+      "country": "England",
+      "start": 55619400
+  },
+  {
+      "country": "Equatorial Guinea",
+      "start": 1308974
+  },
+  {
+      "country": "Eritrea",
+      "start": 3213972
+  },
+  {
+      "country": "Estonia",
+      "start": 1321977
+  },
+  {
+      "country": "Ethiopia",
+      "start": 109224559
+  },
+  {
+      "country": "Falkland Islands",
+      "start": 2840
+  },
+  {
+      "country": "Faroe Islands",
+      "start": 48497
+  },
+  {
+      "country": "Fiji Islands",
+      "start": 883483
+  },
+  {
+      "country": "Finland",
+      "start": 5515525
+  },
+  {
+      "country": "France",
+      "start": 66977107
+  },
+  {
+      "country": "French Guiana",
+      "start": 290691
+  },
+  {
+      "country": "French Polynesia",
+      "start": 277679
+  },
+  {
+      "country": "French Southern territories",
+      "start": 0
+  },
+  {
+      "country": "Gabon",
+      "start": 2119275
+  },
+  {
+      "country": "Gambia",
+      "start": 2280102
+  },
+  {
+      "country": "Georgia",
+      "start": 3726549
+  },
+  {
+      "country": "Germany",
+      "start": 82905782
+  },
+  {
+      "country": "Ghana",
+      "start": 29767108
+  },
+  {
+      "country": "Gibraltar",
+      "start": 33718
+  },
+  {
+      "country": "Greece",
+      "start": 10731726
+  },
+  {
+      "country": "Greenland",
+      "start": 56025
+  },
+  {
+      "country": "Grenada",
+      "start": 111454
+  },
+  {
+      "country": "Guadeloupe",
+      "start": 395700
+  },
+  {
+      "country": "Guam",
+      "start": 165768
+  },
+  {
+      "country": "Guatemala",
+      "start": 17247807
+  },
+  {
+      "country": "Guinea",
+      "start": 12414318
+  },
+  {
+      "country": "Guinea-Bissau",
+      "start": 1874309
+  },
+  {
+      "country": "Guyana",
+      "start": 779004
+  },
+  {
+      "country": "Haiti",
+      "start": 11123176
+  },
+  {
+      "country": "Heard Island and McDonald Islands",
+      "start": 0
+  },
+  {
+      "country": "Holy See (Vatican City State)",
+      "start": 825
+  },
+  {
+      "country": "Honduras",
+      "start": 9587522
+  },
+  {
+      "country": "Hong Kong",
+      "start": 7451000
+  },
+  {
+      "country": "Hungary",
+      "start": 9775564
+  },
+  {
+      "country": "Iceland",
+      "start": 352721
+  },
+  {
+      "country": "India",
+      "start": 1352617328
+  },
+  {
+      "country": "Indonesia",
+      "start": 267663435
+  },
+  {
+      "country": "Iran",
+      "start": 81800269
+  },
+  {
+      "country": "Iraq",
+      "start": 38433600
+  },
+  {
+      "country": "Ireland",
+      "start": 4867309
+  },
+  {
+      "country": "Israel",
+      "start": 8882800
+  },
+  {
+      "country": "Italy",
+      "start": 60421760
+  },
+  {
+      "country": "Ivory Coast",
+      "start": 25069229
+  },
+  {
+      "country": "Jamaica",
+      "start": 2934855
+  },
+  {
+      "country": "Japan",
+      "start": 126529100
+  },
+  {
+      "country": "Jordan",
+      "start": 9956011
+  },
+  {
+      "country": "Kazakhstan",
+      "start": 18272430
+  },
+  {
+      "country": "Kenya",
+      "start": 51393010
+  },
+  {
+      "country": "Kiribati",
+      "start": 115847
+  },
+  {
+      "country": "Kuwait",
+      "start": 4137309
+  },
+  {
+      "country": "Kyrgyzstan",
+      "start": 6322800
+  },
+  {
+      "country": "Laos",
+      "start": 7061507
+  },
+  {
+      "country": "Latvia",
+      "start": 1927174
+  },
+  {
+      "country": "Lebanon",
+      "start": 6848925
+  },
+  {
+      "country": "Lesotho",
+      "start": 2108132
+  },
+  {
+      "country": "Liberia",
+      "start": 4818977
+  },
+  {
+      "country": "Libyan Arab Jamahiriya",
+      "start": 6678567
+  },
+  {
+      "country": "Liechtenstein",
+      "start": 37910
+  },
+  {
+      "country": "Lithuania",
+      "start": 2801543
+  },
+  {
+      "country": "Luxembourg",
+      "start": 607950
+  },
+  {
+      "country": "Macao",
+      "start": 631636
+  },
+  {
+      "country": "North Macedonia",
+      "start": 2084367
+  },
+  {
+      "country": "Madagascar",
+      "start": 26262368
+  },
+  {
+      "country": "Malawi",
+      "start": 18143315
+  },
+  {
+      "country": "Malaysia",
+      "start": 31528585
+  },
+  {
+      "country": "Maldives",
+      "start": 515696
+  },
+  {
+      "country": "Mali",
+      "start": 19077690
+  },
+  {
+      "country": "Malta",
+      "start": 484630
+  },
+  {
+      "country": "Marshall Islands",
+      "start": 58413
+  },
+  {
+      "country": "Martinique",
+      "start": 376480
+  },
+  {
+      "country": "Mauritania",
+      "start": 4403319
+  },
+  {
+      "country": "Mauritius",
+      "start": 1265303
+  },
+  {
+      "country": "Mayotte",
+      "start": 270372
+  },
+  {
+      "country": "Mexico",
+      "start": 126190788
+  },
+  {
+      "country": "Micronesia, Federated States of",
+      "start": 112640
+  },
+  {
+      "country": "Moldova",
+      "start": 2706049
+  },
+  {
+      "country": "Monaco",
+      "start": 38682
+  },
+  {
+      "country": "Mongolia",
+      "start": 3170208
+  },
+  {
+      "country": "Montenegro",
+      "start": 631219
+  },
+  {
+      "country": "Montserrat",
+      "start": 5900
+  },
+  {
+      "country": "Morocco",
+      "start": 36029138
+  },
+  {
+      "country": "Mozambique",
+      "start": 29495962
+  },
+  {
+      "country": "Myanmar",
+      "start": 53708395
+  },
+  {
+      "country": "Namibia",
+      "start": 2448255
+  },
+  {
+      "country": "Nauru",
+      "start": 12704
+  },
+  {
+      "country": "Nepal",
+      "start": 28087871
+  },
+  {
+      "country": "Netherlands",
+      "start": 17231624
+  },
+  {
+      "country": "Netherlands Antilles",
+      "start": 227049
+  },
+  {
+      "country": "New Caledonia",
+      "start": 284060
+  },
+  {
+      "country": "New Zealand",
+      "start": 4841000
+  },
+  {
+      "country": "Nicaragua",
+      "start": 6465513
+  },
+  {
+      "country": "Niger",
+      "start": 22442948
+  },
+  {
+      "country": "Nigeria",
+      "start": 195874740
+  },
+  {
+      "country": "Niue",
+      "start": 1624
+  },
+  {
+      "country": "Norfolk Island",
+      "start": 2169
+  },
+  {
+      "country": "North Korea",
+      "start": 25549819
+  },
+  {
+      "country": "Northern Ireland",
+      "start": 1885400
+  },
+  {
+      "country": "Northern Mariana Islands",
+      "start": 56882
+  },
+  {
+      "country": "Norway",
+      "start": 5311916
+  },
+  {
+      "country": "Oman",
+      "start": 4829483
+  },
+  {
+      "country": "Pakistan",
+      "start": 212215030
+  },
+  {
+      "country": "Palau",
+      "start": 17907
+  },
+  {
+      "country": "Palestine",
+      "start": 4569087
+  },
+  {
+      "country": "Panama",
+      "start": 4176873
+  },
+  {
+      "country": "Papua New Guinea",
+      "start": 8606316
+  },
+  {
+      "country": "Paraguay",
+      "start": 6956071
+  },
+  {
+      "country": "Peru",
+      "start": 31989256
+  },
+  {
+      "country": "Philippines",
+      "start": 106651922
+  },
+  {
+      "country": "Pitcairn",
+      "start": 67
+  },
+  {
+      "country": "Poland",
+      "start": 37974750
+  },
+  {
+      "country": "Portugal",
+      "start": 10283822
+  },
+  {
+      "country": "Puerto Rico",
+      "start": 3195153
+  },
+  {
+      "country": "Qatar",
+      "start": 2781677
+  },
+  {
+      "country": "Reunion",
+      "start": 859959
+  },
+  {
+      "country": "Romania",
+      "start": 19466145
+  },
+  {
+      "country": "Russian Federation",
+      "start": 144478050
+  },
+  {
+      "country": "Rwanda",
+      "start": 12301939
+  },
+  {
+      "country": "Saint Helena",
+      "start": 6600
+  },
+  {
+      "country": "Saint Kitts and Nevis",
+      "start": 52441
+  },
+  {
+      "country": "Saint Lucia",
+      "start": 181889
+  },
+  {
+      "country": "Saint Pierre and Miquelon",
+      "start": 5888
+  },
+  {
+      "country": "Saint Vincent and the Grenadines",
+      "start": 110210
+  },
+  {
+      "country": "Samoa",
+      "start": 196130
+  },
+  {
+      "country": "San Marino",
+      "start": 33785
+  },
+  {
+      "country": "Sao Tome and Principe",
+      "start": 211028
+  },
+  {
+      "country": "Saudi Arabia",
+      "start": 33699947
+  },
+  {
+      "country": "Scotland",
+      "start": 5424800
+  },
+  {
+      "country": "Senegal",
+      "start": 15854360
+  },
+  {
+      "country": "Serbia",
+      "start": 6963764	
+  },
+  {
+      "country": "Seychelles",
+      "start": 96762
+  },
+  {
+      "country": "Sierra Leone",
+      "start": 7650154
+  },
+  {
+      "country": "Singapore",
+      "start": 5638676
+  },
+  {
+      "country": "Slovakia",
+      "start": 5446771
+  },
+  {
+      "country": "Slovenia",
+      "start": 2073894
+  },
+  {
+      "country": "Solomon Islands",
+      "start": 652858
+  },
+  {
+      "country": "Somalia",
+      "start": 15008154
+  },
+  {
+      "country": "South Africa",
+      "start": 57779622
+  },
+  {
+      "country": "South Georgia and the South Sandwich Islands",
+      "start": 30
+  },
+  {
+      "country": "South Korea",
+      "start": 51606633
+  },
+  {
+      "country": "South Sudan",
+      "start": 10975920
+  },
+  {
+      "country": "Spain",
+      "start": 46796540
+  },
+  {
+      "country": "SriLanka",
+      "start": 21670000
+  },
+  {
+      "country": "Sudan",
+      "start": 41801533
+  },
+  {
+      "country": "Suriname",
+      "start": 575991
+  },
+  {
+      "country": "Svalbard and Jan Mayen",
+      "start": 2572
+  },
+  {
+      "country": "Swaziland",
+      "start": 1136191
+  },
+  {
+      "country": "Sweden",
+      "start": 10175214
+  },
+  {
+      "country": "Switzerland",
+      "start": 8513227
+  },
+  {
+      "country": "Syria",
+      "start": 16906283
+  },
+  {
+      "country": "Tajikistan",
+      "start": 9100837
+  },
+  {
+      "country": "Tanzania",
+      "start": 56318348
+  },
+  {
+      "country": "Thailand",
+      "start": 69428524
+  },
+  {
+      "country": "The Democratic Republic of Congo",
+      "start": 84068091
+  },
+  {
+      "country": "Togo",
+      "start": 7889094
+  },
+  {
+      "country": "Tokelau",
+      "start": 1411
+  },
+  {
+      "country": "Tonga",
+      "start": 103197
+  },
+  {
+      "country": "Trinidad and Tobago",
+      "start": 1389858
+  },
+  {
+      "country": "Tunisia",
+      "start": 11565204
+  },
+  {
+      "country": "Turkey",
+      "start": 82319724
+  },
+  {
+      "country": "Turkmenistan",
+      "start": 5850908
+  },
+  {
+      "country": "Turks and Caicos Islands",
+      "start": 37665
+  },
+  {
+      "country": "Tuvalu",
+      "start": 11508
+  },
+  {
+      "country": "Uganda",
+      "start": 42723139
+  },
+  {
+      "country": "Ukraine",
+      "start": 44622516
+  },
+  {
+      "country": "United Arab Emirates",
+      "start": 9630959
+  },
+  {
+      "country": "United Kingdom",
+      "start": 66460344
+  },
+  {
+      "country": "United States",
+      "start": 326687501
+  },
+  {
+      "country": "United States Minor Outlying Islands",
+      "start": 300
+  },
+  {
+      "country": "Uruguay",
+      "start": 3449299
+  },
+  {
+      "country": "Uzbekistan",
+      "start": 32955400
+  },
+  {
+      "country": "Vanuatu",
+      "start": 292680
+  },
+  {
+      "country": "Venezuela",
+      "start": 28870195
+  },
+  {
+      "country": "Vietnam",
+      "start": 95540395
+  },
+  {
+      "country": "Virgin Islands, British",
+      "start": 29802
+  },
+  {
+      "country": "Virgin Islands, U.S.",
+      "start": 106977
+  },
+  {
+      "country": "Wales",
+      "start": 3139000
+  },
+  {
+      "country": "Wallis and Futuna",
+      "start": 15289
+  },
+  {
+      "country": "Western Sahara",
+      "start": 652271
+  },
+  {
+      "country": "Yemen",
+      "start": 28498687
+  },
+  {
+      "country": "Zambia",
+      "start": 17351822
+  },
+  {
+      "country": "Zimbabwe",
+      "start": 14439018
+  }
+]

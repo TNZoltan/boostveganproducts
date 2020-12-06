@@ -5,7 +5,11 @@ const {
   removeDuplicates
 } = require('../globalHelpers')
 
-const isQualifying = () => true
+const isQualifying = () => {
+  
+}
+
+
 const getPageLinks = (html) => {
   let i = 0
   const componentOpenIndex = html.indexOf('Related Pages')

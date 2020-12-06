@@ -2,9 +2,9 @@ const helper = require('./helper')
 const axios = require('axios')
 const fs = require("fs")
 
-const filename = __dirname + "\\result\\global.txt"
+const filename = __dirname + "\\countries\\global.txt"
 
-fs.writeFile(filename, "Global List" + '\r\n', (err) => {
+fs.writeFile(filename, "", (err) => {
     if (err) console.log(err)
     else console.log("File is created")
 })
@@ -20,7 +20,7 @@ const config = {
 let allLinks = []
 
 const getLinks = (link, round = 1) => {
-    const waitTime = Math.floor(Math.random() * 2000 * round) + 300
+    const waitTime = Math.floor(Math.random() * 2000 * Math.pow(round, 2)) + 300
     setTimeout(() => {
         axios.get(link, config).then(res => {
             addText(link)
