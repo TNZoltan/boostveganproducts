@@ -18,7 +18,7 @@ const global = ["Vegan", "vegan", "VEGAN", "plant-based", "plantbased", "Plant-b
 
 const filename = __dirname  + "\\logs\\log_" + getFilenameDate() + ".txt"
 
-const addText = (text) => fs.appendFileSync(filename, text)
+const addText = (text) => fs.appendFileSync(filename, text + '\r\n')
 
 // Runs multiple checks for the html with a single word
 const checksPass = (html, wordIndex) => {
@@ -83,10 +83,10 @@ const fetchUrl = (url, words) => {
 
 const saveData = (result, url, countryName) => {
   console.log(`Word ${result.word} was found on ${url} from ${countryName}`)
-  addText(' - - - - - - - - \r\n')
-  addText(`Word: ${result.word}\r\n`)
-  addText(`URL: ${url} from ${countryName}\r\n`)
-  addText(`"${result.paragraph}"\r\n`)
+  addText(' - - - - - - - - ')
+  addText(`Word: ${result.word}`)
+  addText(`URL: ${url} from ${countryName}`)
+  addText(`"${result.paragraph}"`)
 }
 
 const run = (countryIndex, siteIndex) => {

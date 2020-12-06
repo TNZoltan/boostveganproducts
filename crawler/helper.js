@@ -1,8 +1,5 @@
 const {
-  findTextBehindIndex,
-  findTextAfterIndex,
   findAbsoluteTextAfterIndex,
-  getNextWordIndex,
   indexes,
   removeURLParameters,
   removeDuplicates
@@ -11,9 +8,10 @@ const {
 const isQualifying = () => true
 const getPageLinks = (html) => {
   let i = 0
-  const ulTagOpenIndex = html.indexOf('uiList uiCollapsedList uiCollapsedListHidden')
-  const ulTagCloseIndex = findTextAfterIndex(html, ulTagOpenIndex, '</ul')
-  const component = html.substring(ulTagOpenIndex, ulTagCloseIndex)
+  const componentOpenIndex = html.indexOf('Related Pages')
+  if (componentOpenIndex < 0) throw new Error('Component not found')
+  const componentCloseIndex = findAbsoluteTextAfterIndex(html, componentOpenIndex, '</ul')
+  const component = html.substring(componentOpenIndex, componentCloseIndex)
   const linksOpenIndices = indexes(component, 'https:')
   return removeDuplicates(
     linksOpenIndices.map(openIndex =>

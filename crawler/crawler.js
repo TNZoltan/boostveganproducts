@@ -1,23 +1,37 @@
 const helper = require('./helper')
 const axios = require('axios')
+const fs = require("fs")
 
-// USE this: helper.isQualifying
+const filename = __dirname + "\\result\\global.txt"
 
-all_links = []
+fs.writeFile(filename, "Global List" + '\r\n', (err) => {
+    if (err) console.log(err)
+    else console.log("File is created")
+})
 
-start = "https://www.facebook.com/burgerking"
+const addText = (text) => fs.appendFileSync(filename, text + '\r\n')
 
-function get_links(start_link){
-    axios.get(start_link).then(res => {
-        console.log(`Checking ${start_link}`)
-        const html = res.data.toString()
-        const temp_links = helper.getPageLinks(html).filter(e => !all_links.includes(e))
-        all_links.concat(temp_links)
-        console.log(all_links)
-        if(temp_links.length > 0){
-         temp_links.forEach(get_links);
-        }
-    });
+const config = {
+    headers: {
+        'Accept-Language': "en-US"
+    }
 }
 
-get_links(start)
+let allLinks = []
+
+const getLinks = (link, round = 1) => {
+    const waitTime = Math.floor(Math.random() * 2000 * round) + 300
+    setTimeout(() => {
+        axios.get(link, config).then(res => {
+            addText(link)
+            allLinks.push(link)
+            const html = res.data.toString()
+            const relatedLinks = helper.getPageLinks(html).filter(e => !allLinks.includes(e))
+            if (relatedLinks.length > 0) {
+                relatedLinks.forEach(l => getLinks(l, round + 1));
+            }
+        });
+    }, waitTime)
+}
+
+getLinks("https://www.facebook.com/burgerking")
