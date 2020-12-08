@@ -3,35 +3,58 @@ const axios = require('axios')
 const fs = require("fs")
 
 const filename = __dirname + "\\countries\\global.txt"
+const ignoredFilename = __dirname + "\\countries\\global_ignored.txt"
 
 fs.writeFile(filename, "", (err) => {
-    if (err) console.log(err)
-    else console.log("File is created")
+  if (err) console.log(err)
+  else console.log("Main file is created")
 })
 
-const addText = (text) => fs.appendFileSync(filename, text + '\r\n')
+fs.writeFile(ignoredFilename, "", (err) => {
+  if (err) console.log(err)
+  else console.log("Ignored file is created")
+})
+
+const saveText = (text, file = filename) => fs.appendFileSync(file, text + '\r\n')
+
+const saveIgnoredText = (text) => saveText(text, ignoredFilename)
 
 const config = {
-    headers: {
-        'Accept-Language': "en-US"
-    }
+  headers: {
+    'Accept-Language': "en-US"
+  }
 }
 
-let allLinks = []
+let validLinks = []
+let ignoredLinks = []
 
 const getLinks = (link, round = 1) => {
-    const waitTime = Math.floor(Math.random() * 2000 * Math.pow(round, 2)) + 300
-    setTimeout(() => {
-        axios.get(link, config).then(res => {
-            addText(link)
-            allLinks.push(link)
-            const html = res.data.toString()
-            const relatedLinks = helper.getPageLinks(html).filter(e => !allLinks.includes(e))
-            if (relatedLinks.length > 0) {
-                relatedLinks.forEach(l => getLinks(l, round + 1));
-            }
-        });
-    }, waitTime)
+  const waitTime = Math.floor(Math.random() * 2000 * Math.pow(round, 2)) + 300
+  setTimeout(() => {
+    console.log('Sending request to: ' + link)
+    axios.get(link, config).then(res => {
+      const html = res.data.toString()
+      const likes = helper.getNumberOfLikes(html)
+      if (likes > 10000) {
+        saveText(link)
+        validLinks.push(link)
+      } else {
+        if (!ignoredLinks.includes(link)) {
+          saveIgnoredText(`${link} - Reason: ${likes} likes`)
+          ignoredLinks.push(link)
+        }
+      }
+      const relatedLinks = helper.getPageLinks(html).filter(e => !validLinks.includes(e))
+      if (relatedLinks.length > 0) {
+        relatedLinks.forEach(l => getLinks(l, round + 1));
+      }
+    });
+  }, waitTime)
 }
 
-getLinks("https://www.facebook.com/burgerking")
+console.log('what')
+axios.get('https://www.facebook.com/BarcelMexico/', config).then(res=> {
+  saveText(res.data.toString())
+})
+
+//getLinks("https://www.facebook.com/burgerking")

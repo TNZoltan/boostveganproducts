@@ -5,13 +5,19 @@
   "Pub",
   "Brewery",
   "Cafe",
-  "Coffee Shop",
+  "Shop",
   "Deli",
   "Candy Store",
-  "Chocolate Shop",
   "Farmers Market",
-  "Food Delivery Service",
+  "Food Delivery",
   "Grocery Store",
   "Supermarket",
-  "Restaurant"
+  "Restaurant",
+  "Food & Beverage",
+  ">Company",
+  "Retail Company",
+  "Product/Service",
+  "Clothing Store",
+  "Clothing (Brand)",
+  "Department Store"
 ]
