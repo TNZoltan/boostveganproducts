@@ -11,7 +11,10 @@ const {
 // Takes two words that will cut out the first combination found
 const componentSlicerWords = (html, openWord, closeWord) => {
   const componentOpenIndex = html.indexOf(openWord)
-  if (componentOpenIndex < 0) throw new Error(`Component not found (${openWord})`)
+  if (componentOpenIndex < 0) {
+    console.error(`Component not found (${openWord})`)
+    return html
+  }
   const componentCloseIndex = findAbsoluteTextAfterIndex(html, componentOpenIndex, closeWord)
   return html.substring(componentOpenIndex, componentCloseIndex)
 }
@@ -19,15 +22,18 @@ const componentSlicerWords = (html, openWord, closeWord) => {
 // Takes opening word and cuts out X offset after
 const componentSlicerOffset = (html, openWord, offset) => {
   const componentOpenIndex = html.indexOf(openWord)
-  if (componentOpenIndex < 0) throw new Error(`Component not found (${openWord})`)
+  if (componentOpenIndex < 0) {
+    console.error(`Component not found (${openWord})`)
+    return html
+  }
   const componentCloseIndex = componentOpenIndex + offset
   return html.substring(componentOpenIndex, componentCloseIndex)
 }
 
-const acceptedCategoryInComponent = (component) => {
+const isCategoryAccepted = (categoryText) => {
   let categoryPass = false
   acceptedCategories.forEach(category => {
-    if (component.indexOf(category) > 0) {
+    if (categoryText.indexOf(category) >= 0) {
       categoryPass = true
     }
   })
@@ -35,34 +41,56 @@ const acceptedCategoryInComponent = (component) => {
 }
 
 const getNumberOfLikes = (html) => {
-  const likesComponent = componentSlicerOffset(html, '>Community<', 8000)
-  const likeWordIndex = likesComponent.indexOf('like')
-  const likeOpen = findTextBehindIndex(likesComponent, likeWordIndex, '<div')
-  const likeClose = findAbsoluteTextAfterIndex(likesComponent, likeWordIndex, '</div')
-  const likeSentence = likesComponent.substring(likeOpen, likeClose)
-  return parseInt(likeSentence.replace(/\D/g, ""))
+  const component = componentSlicerOffset(html, '>Community<', 8000)
+  const index = component.indexOf('like')
+  const open = findTextBehindIndex(component, index, '<div')
+  const close = findAbsoluteTextAfterIndex(component, index, '</div')
+  const sentence = component.substring(open, close)
+  return parseInt(sentence.replace(/\D/g, ""))
 }
 
+const getCategory = (html) => {
+  const possibleWords = [
+    {
+      word: 'keywords_pages',
+      openOffset: 0
+    },
+    {
+      word: "<div><a href=\"/pages/category",
+      openOffset: 10
+    },
+    {
+      word: "· <a href=\"/pages/category",
+      openOffset: 0
+    }
+  ]
+  let wordObj;
+  possibleWords.forEach(c => {
+    if (html.indexOf(c.word) >= 0) wordObj = c
+  })
+  let component = componentSlicerOffset(html, wordObj.word, 400).substring(wordObj.openOffset)
+  const open = component.indexOf('>') + 1
+  const close = findAbsoluteTextAfterIndex(component, open, '<')
+  const sentence = component.substring(open, close)
+  return sentence.replace('amp;', '')
+}
 
-const getPageLinks = (html) => {
+const getPageLinks = (html, link) => {
   const component = componentSlicerWords(html, 'Related Pages', '</ul')
-  const linksOpenIndices = indexes(component, 'https:').filter(index =>
-    acceptedCategoryInComponent(
-      componentSlicerWords(
-        component.substring(index),
-        'fcg',
-        '</div'
-      )
-    )
-  )
+  if (component === html) {
+    console.error('Could not find related pages for' + link)
+  }
+  const linksOpenIndices = indexes(component, 'https:')
   return removeDuplicates(
     linksOpenIndices.map(openIndex =>
       component.substring(openIndex, findAbsoluteTextAfterIndex(component, openIndex, '"') + 1)
-    ).filter(str => !str.includes('scontent')).map(str => removeURLParameters(str))
+    ).filter(str => !str.includes('scontent')).filter(str => !/\d/.test(str)).map(str => removeURLParameters(str))
   )
 }
 
 module.exports = {
   getNumberOfLikes,
-  getPageLinks
+  getPageLinks,
+  getCategory,
+  isCategoryAccepted
 }

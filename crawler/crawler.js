@@ -29,22 +29,29 @@ let validLinks = []
 let ignoredLinks = []
 
 const getLinks = (link, round = 1) => {
-  const waitTime = Math.floor(Math.random() * 2000 * Math.pow(round, 2)) + 300
+  const waitTime = Math.floor(Math.random() * 5000 * Math.pow(round, 2)) + 300
   setTimeout(() => {
-    console.log('Sending request to: ' + link)
+    // console.log('Sending request to: ' + link)
     axios.get(link, config).then(res => {
       const html = res.data.toString()
       const likes = helper.getNumberOfLikes(html)
-      if (likes > 10000) {
+      const category = helper.getCategory(html)
+      if (isNaN(likes) && (!category || category.length > 50)) {
+        saveIgnoredText(`${link}`)
+        saveIgnoredText(`Failed to load`)
+      } 
+      if (likes > 10000 && helper.isCategoryAccepted(category)) {
         saveText(link)
         validLinks.push(link)
       } else {
         if (!ignoredLinks.includes(link)) {
-          saveIgnoredText(`${link} - Reason: ${likes} likes`)
+          saveIgnoredText(`${link}`)
+          if (likes <= 10000) saveIgnoredText(`${likes} likes is below minimum`)
+          if (!helper.isCategoryAccepted(category)) saveIgnoredText(`${category} is not accepted`)
           ignoredLinks.push(link)
         }
       }
-      const relatedLinks = helper.getPageLinks(html).filter(e => !validLinks.includes(e))
+      const relatedLinks = helper.getPageLinks(html, link).filter(e => !validLinks.includes(e))
       if (relatedLinks.length > 0) {
         relatedLinks.forEach(l => getLinks(l, round + 1));
       }
@@ -52,9 +59,4 @@ const getLinks = (link, round = 1) => {
   }, waitTime)
 }
 
-console.log('what')
-axios.get('https://www.facebook.com/BarcelMexico/', config).then(res=> {
-  saveText(res.data.toString())
-})
-
-//getLinks("https://www.facebook.com/burgerking")
+getLinks("https://www.facebook.com/burgerking")
