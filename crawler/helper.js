@@ -23,8 +23,6 @@ const possibleCategoryOpenWords = [
   }
 ]
 
-// Takes two words that will cut out the first combination found
-// Returns the same html on failure
 const componentSlicerWords = (html, openWord, closeWord) => {
   const componentOpenIndex = html.indexOf(openWord)
   if (componentOpenIndex < 0) {
@@ -34,8 +32,6 @@ const componentSlicerWords = (html, openWord, closeWord) => {
   return html.substring(componentOpenIndex, componentCloseIndex)
 }
 
-// Takes opening word and cuts out X offset after
-// Returns the same html on failure
 const componentSlicerOffset = (html, openWord, offset) => {
   const componentOpenIndex = html.indexOf(openWord)
   if (componentOpenIndex < 0) {

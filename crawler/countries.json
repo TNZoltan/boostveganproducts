@@ -1,883 +1,265 @@
 [
   {
-      "country": "argentina",
-      "filename": "",
+      "country": "Argentina",
+      "filename": "argentina",
       "population": 44494502,
       "start": ""
   },
   {
-      "country": "australia",
-      "filename": "",
+      "country": "Australia",
+      "filename": "australia",
       "population": 24982688,
       "start": ""
   },
   {
-      "country": "austria",
-      "filename": "",
+      "country": "Austria",
+      "filename": "austria",
       "population": 8840521,
       "start": ""
   },
   {
-      "country": "bangladesh",
-      "filename": "",
-      "population": 161356039,
-      "start": ""
-  },
-  {
-      "country": "belarus",
-      "filename": "",
+      "country": "Belarus",
+      "filename": "belarus",
       "population": 9483499,
       "start": ""
   },
   {
-      "country": "belgium",
-      "filename": "",
+      "country": "Belgium",
+      "filename": "belgium",
       "population": 11433256,
       "start": ""
   },
   {
-      "country": "bolivia",
-      "filename": "",
-      "population": 11353142,
-      "start": ""
-  },
-  {
-      "country": "bosnia",
-      "filename": "",
-      "population": 3323929,
-      "start": ""
-  },
-  {
-      "country": "brazil",
-      "filename": "",
-      "population": 209469333,
-      "start": ""
-  },
-  {
-      "country": "bulgaria",
-      "filename": "",
+      "country": "Bulgaria",
+      "filename": "bulgaria",
       "population": 7025037,
       "start": ""
   },
   {
-      "country": "cambodia",
-      "filename": "",
-      "population": 16249798,
-      "start": ""
-  },
-  {
-      "country": "canada",
-      "filename": "",
+      "country": "Canada",
+      "filename": "canada",
       "population": 37057765,
       "start": ""
   },
   {
-      "country": "chile",
-      "filename": "",
-      "population": 18729160,
-      "start": ""
-  },
-  {
-      "country": "colombia",
-      "filename": "",
-      "population": 49648685,
-      "start": ""
-  },
-  {
-      "country": "costarica",
-      "filename": "",
-      "population": 4999441,
-      "start": ""
-  },
-  {
-      "country": "croatia",
-      "filename": "",
-      "population": 4087843,
-      "start": ""
-  },
-  {
-      "country": "cyprus",
-      "filename": "",
-      "population": 1189265,
-      "start": ""
-  },
-  {
-      "country": "czechia",
-      "filename": "",
+      "country": "Czechia",
+      "filename": "czechia",
       "population": 10629928,
       "start": ""
   },
   {
-      "country": "denmark",
-      "filename": "",
+      "country": "Denmark",
+      "filename": "denmark",
       "population": 5793636,
       "start": ""
   },
   {
-      "country": "dominicanrepublic",
-      "filename": "",
-      "population": 10627165,
-      "start": ""
-  },
-  {
-      "country": "england",
-      "filename": "",
+      "country": "England",
+      "filename": "england",
       "population": 55619400,
       "start": ""
   },
   {
-      "country": "estonia",
-      "filename": "",
+      "country": "Estonia",
+      "filename": "estonia",
       "population": 1321977,
       "start": ""
   },
   {
       "country": "Finland",
-      "filename": "",
+      "filename": "finland",
       "population": 5515525,
       "start": ""
   },
   {
       "country": "France",
-      "filename": "",
+      "filename": "france",
       "population": 66977107,
       "start": ""
   },
   {
-      "country": "French Guiana",
-      "filename": "",
-      "population": 290691,
-      "start": ""
-  },
-  {
-      "country": "French Polynesia",
-      "filename": "",
-      "population": 277679,
-      "start": ""
-  },
-  {
-      "country": "French Southern territories",
-      "filename": "",
-      "population": 0,
-      "start": ""
-  },
-  {
-      "country": "Gabon",
-      "filename": "",
-      "population": 2119275,
-      "start": ""
-  },
-  {
-      "country": "Gambia",
-      "filename": "",
-      "population": 2280102,
-      "start": ""
-  },
-  {
       "country": "Germany",
-      "filename": "",
+      "filename": "germany",
       "population": 82905782,
       "start": ""
   },
   {
       "country": "Greece",
-      "filename": "",
+      "filename": "greece",
       "population": 10731726,
       "start": ""
   },
   {
       "country": "Greenland",
-      "filename": "",
+      "filename": "greenland",
       "population": 56025,
       "start": ""
   },
   {
       "country": "Hungary",
-      "filename": "",
+      "filename": "hungary",
       "population": 9775564,
       "start": ""
   },
   {
       "country": "Iceland",
-      "filename": "",
+      "filename": "iceland",
       "population": 352721,
       "start": ""
   },
   {
-      "country": "India",
-      "filename": "",
-      "population": 1352617328,
-      "start": ""
-  },
-  {
-      "country": "Indonesia",
-      "filename": "",
-      "population": 267663435,
-      "start": ""
-  },
-  {
       "country": "Ireland",
-      "filename": "",
+      "filename": "ireland",
       "population": 4867309,
       "start": ""
   },
   {
-      "country": "israel",
-      "filename": "",
-      "population": 8882800,
-      "start": ""
-  },
-  {
       "country": "italy",
-      "filename": "",
+      "filename": "italy",
       "population": 60421760,
       "start": ""
   },
   {
-      "country": "japan",
-      "filename": "",
-      "population": 126529100,
-      "start": ""
-  },
-  {
       "country": "Latvia",
-      "filename": "",
+      "filename": "latvia",
       "population": 1927174,
       "start": ""
   },
   {
-      "country": "Lebanon",
-      "filename": "",
-      "population": 6848925,
-      "start": ""
-  },
-  {
-      "country": "Lesotho",
-      "filename": "",
-      "population": 2108132,
-      "start": ""
-  },
-  {
-      "country": "Liberia",
-      "filename": "",
-      "population": 4818977,
-      "start": ""
-  },
-  {
-      "country": "Libyan Arab Jamahiriya",
-      "filename": "",
-      "population": 6678567,
-      "start": ""
-  },
-  {
       "country": "Liechtenstein",
-      "filename": "",
+      "filename": "liechtenstein",
       "population": 37910,
       "start": ""
   },
   {
       "country": "Lithuania",
-      "filename": "",
+      "filename": "lithuania",
       "population": 2801543,
       "start": ""
   },
   {
       "country": "Luxembourg",
-      "filename": "",
+      "filename": "luxembourg",
       "population": 607950,
       "start": ""
   },
   {
-      "country": "Macao",
-      "filename": "",
-      "population": 631636,
-      "start": ""
-  },
-  {
-      "country": "North Macedonia",
-      "filename": "",
-      "population": 2084367,
-      "start": ""
-  },
-  {
-      "country": "Madagascar",
-      "filename": "",
-      "population": 26262368,
-      "start": ""
-  },
-  {
-      "country": "Malawi",
-      "filename": "",
-      "population": 18143315,
-      "start": ""
-  },
-  {
-      "country": "Malaysia",
-      "filename": "",
-      "population": 31528585,
-      "start": ""
-  },
-  {
-      "country": "Maldives",
-      "filename": "",
-      "population": 515696,
-      "start": ""
-  },
-  {
-      "country": "Mali",
-      "filename": "",
-      "population": 19077690,
-      "start": ""
-  },
-  {
       "country": "Malta",
-      "filename": "",
+      "filename": "malta",
       "population": 484630,
       "start": ""
   },
   {
-      "country": "Marshall Islands",
-      "filename": "",
-      "population": 58413,
-      "start": ""
-  },
-  {
-      "country": "Martinique",
-      "filename": "",
-      "population": 376480,
-      "start": ""
-  },
-  {
-      "country": "Mauritania",
-      "filename": "",
-      "population": 4403319,
-      "start": ""
-  },
-  {
-      "country": "Mauritius",
-      "filename": "",
-      "population": 1265303,
-      "start": ""
-  },
-  {
-      "country": "Mayotte",
-      "filename": "",
-      "population": 270372,
-      "start": ""
-  },
-  {
-      "country": "Mexico",
-      "filename": "",
-      "population": 126190788,
-      "start": ""
-  },
-  {
-      "country": "Micronesia, Federated States of",
-      "filename": "",
-      "population": 112640,
-      "start": ""
-  },
-  {
       "country": "Moldova",
-      "filename": "",
+      "filename": "moldova",
       "population": 2706049,
       "start": ""
   },
   {
-      "country": "Monaco",
-      "filename": "",
-      "population": 38682,
-      "start": ""
-  },
-  {
-      "country": "Mongolia",
-      "filename": "",
-      "population": 3170208,
-      "start": ""
-  },
-  {
-      "country": "Montenegro",
-      "filename": "",
-      "population": 631219,
-      "start": ""
-  },
-  {
-      "country": "Montserrat",
-      "filename": "",
-      "population": 5900,
-      "start": ""
-  },
-  {
-      "country": "Morocco",
-      "filename": "",
-      "population": 36029138,
-      "start": ""
-  },
-  {
-      "country": "Mozambique",
-      "filename": "",
-      "population": 29495962,
-      "start": ""
-  },
-  {
-      "country": "Myanmar",
-      "filename": "",
-      "population": 53708395,
-      "start": ""
-  },
-  {
-      "country": "Namibia",
-      "filename": "",
-      "population": 2448255,
-      "start": ""
-  },
-  {
-      "country": "Nauru",
-      "filename": "",
-      "population": 12704,
-      "start": ""
-  },
-  {
-      "country": "Nepal",
-      "filename": "",
-      "population": 28087871,
-      "start": ""
-  },
-  {
       "country": "Netherlands",
-      "filename": "",
+      "filename": "netherlands",
       "population": 17231624,
       "start": ""
   },
   {
-      "country": "Netherlands Antilles",
-      "filename": "",
-      "population": 227049,
-      "start": ""
-  },
-  {
-      "country": "New Caledonia",
-      "filename": "",
-      "population": 284060,
-      "start": ""
-  },
-  {
       "country": "New Zealand",
-      "filename": "",
+      "filename": "new_zealand",
       "population": 4841000,
       "start": ""
   },
   {
-      "country": "Nicaragua",
-      "filename": "",
-      "population": 6465513,
-      "start": ""
-  },
-  {
-      "country": "Niger",
-      "filename": "",
-      "population": 22442948,
-      "start": ""
-  },
-  {
-      "country": "Nigeria",
-      "filename": "",
-      "population": 195874740,
-      "start": ""
-  },
-  {
-      "country": "Niue",
-      "filename": "",
-      "population": 1624,
-      "start": ""
-  },
-  {
-      "country": "Norfolk Island",
-      "filename": "",
-      "population": 2169,
-      "start": ""
-  },
-  {
-      "country": "North Korea",
-      "filename": "",
-      "population": 25549819,
-      "start": ""
-  },
-  {
       "country": "Northern Ireland",
-      "filename": "",
+      "filename": "northern_ireland",
       "population": 1885400,
       "start": ""
   },
   {
-      "country": "Northern Mariana Islands",
-      "filename": "",
-      "population": 56882,
-      "start": ""
-  },
-  {
       "country": "Norway",
-      "filename": "",
+      "filename": "norway",
       "population": 5311916,
       "start": ""
   },
   {
-      "country": "Oman",
-      "filename": "",
-      "population": 4829483,
-      "start": ""
-  },
-  {
-      "country": "Pakistan",
-      "filename": "",
-      "population": 212215030,
-      "start": ""
-  },
-  {
-      "country": "Palau",
-      "filename": "",
-      "population": 17907,
-      "start": ""
-  },
-  {
-      "country": "Palestine",
-      "filename": "",
-      "population": 4569087,
-      "start": ""
-  },
-  {
-      "country": "Panama",
-      "filename": "",
-      "population": 4176873,
-      "start": ""
-  },
-  {
-      "country": "Papua New Guinea",
-      "filename": "",
-      "population": 8606316,
-      "start": ""
-  },
-  {
-      "country": "Paraguay",
-      "filename": "",
-      "population": 6956071,
-      "start": ""
-  },
-  {
-      "country": "Peru",
-      "filename": "",
-      "population": 31989256,
-      "start": ""
-  },
-  {
-      "country": "Philippines",
-      "filename": "",
-      "population": 106651922,
-      "start": ""
-  },
-  {
-      "country": "Pitcairn",
-      "filename": "",
-      "population": 67,
-      "start": ""
-  },
-  {
       "country": "Poland",
-      "filename": "",
+      "filename": "poland",
       "population": 37974750,
       "start": ""
   },
   {
       "country": "Portugal",
-      "filename": "",
+      "filename": "portugal",
       "population": 10283822,
       "start": ""
   },
   {
-      "country": "Puerto Rico",
-      "filename": "",
-      "population": 3195153,
-      "start": ""
-  },
-  {
-      "country": "Qatar",
-      "filename": "",
-      "population": 2781677,
-      "start": ""
-  },
-  {
-      "country": "Reunion",
-      "filename": "",
-      "population": 859959,
-      "start": ""
-  },
-  {
       "country": "Romania",
-      "filename": "",
+      "filename": "romania",
       "population": 19466145,
       "start": ""
   },
   {
-      "country": "Russian Federation",
-      "filename": "",
-      "population": 144478050,
-      "start": ""
-  },
-  {
-      "country": "Rwanda",
-      "filename": "",
-      "population": 12301939,
-      "start": ""
-  },
-  {
-      "country": "Saint Helena",
-      "filename": "",
-      "population": 6600,
-      "start": ""
-  },
-  {
-      "country": "Saint Kitts and Nevis",
-      "filename": "",
-      "population": 52441,
-      "start": ""
-  },
-  {
-      "country": "Saint Lucia",
-      "filename": "",
-      "population": 181889,
-      "start": ""
-  },
-  {
-      "country": "Saint Pierre and Miquelon",
-      "filename": "",
-      "population": 5888,
-      "start": ""
-  },
-  {
-      "country": "Saint Vincent and the Grenadines",
-      "filename": "",
-      "population": 110210,
-      "start": ""
-  },
-  {
-      "country": "Samoa",
-      "filename": "",
-      "population": 196130,
-      "start": ""
-  },
-  {
-      "country": "San Marino",
-      "filename": "",
-      "population": 33785,
-      "start": ""
-  },
-  {
-      "country": "Sao Tome and Principe",
-      "filename": "",
-      "population": 211028,
-      "start": ""
-  },
-  {
-      "country": "Saudi Arabia",
-      "filename": "",
-      "population": 33699947,
-      "start": ""
-  },
-  {
       "country": "Scotland",
-      "filename": "",
+      "filename": "scotland",
       "population": 5424800,
       "start": ""
   },
   {
-      "country": "Senegal",
-      "filename": "",
-      "population": 15854360,
-      "start": ""
-  },
-  {
       "country": "Serbia",
-      "filename": "",
+      "filename": "serbia",
       "population": 6963764	,
       "start": ""
   },
   {
-      "country": "Seychelles",
-      "filename": "",
-      "population": 96762,
-      "start": ""
-  },
-  {
-      "country": "Sierra Leone",
-      "filename": "",
-      "population": 7650154,
-      "start": ""
-  },
-  {
-      "country": "Singapore",
-      "filename": "",
-      "population": 5638676,
-      "start": ""
-  },
-  {
       "country": "Slovakia",
-      "filename": "",
+      "filename": "slovakia",
       "population": 5446771,
       "start": ""
   },
   {
       "country": "Slovenia",
-      "filename": "",
+      "filename": "slovenia",
       "population": 2073894,
       "start": ""
   },
   {
-      "country": "Solomon Islands",
-      "filename": "",
-      "population": 652858,
-      "start": ""
-  },
-  {
-      "country": "Somalia",
-      "filename": "",
-      "population": 15008154,
-      "start": ""
-  },
-  {
-      "country": "South Africa",
-      "filename": "",
-      "population": 57779622,
-      "start": ""
-  },
-  {
-      "country": "South Georgia and the South Sandwich Islands",
-      "filename": "",
-      "population": 30,
-      "start": ""
-  },
-  {
-      "country": "South Korea",
-      "filename": "",
-      "population": 51606633,
-      "start": ""
-  },
-  {
-      "country": "South Sudan",
-      "filename": "",
-      "population": 10975920,
-      "start": ""
-  },
-  {
       "country": "Spain",
-      "filename": "",
+      "filename": "spain",
       "population": 46796540,
       "start": ""
   },
   {
-      "country": "SriLanka",
-      "filename": "",
-      "population": 21670000,
-      "start": ""
-  },
-  {
-      "country": "Sudan",
-      "filename": "",
-      "population": 41801533,
-      "start": ""
-  },
-  {
-      "country": "Suriname",
-      "filename": "",
-      "population": 575991,
-      "start": ""
-  },
-  {
-      "country": "Svalbard and Jan Mayen",
-      "filename": "",
-      "population": 2572,
-      "start": ""
-  },
-  {
-      "country": "Swaziland",
-      "filename": "",
-      "population": 1136191,
-      "start": ""
-  },
-  {
       "country": "Sweden",
-      "filename": "",
+      "filename": "sweden",
       "population": 10175214,
       "start": ""
   },
   {
       "country": "Switzerland",
-      "filename": "",
+      "filename": "switzerland",
       "population": 8513227,
       "start": ""
   },
   {
-      "country": "Syria",
-      "filename": "",
-      "population": 16906283,
-      "start": ""
-  },
-  {
-      "country": "Tajikistan",
-      "filename": "",
-      "population": 9100837,
-      "start": ""
-  },
-  {
-      "country": "Tanzania",
-      "filename": "",
-      "population": 56318348,
-      "start": ""
-  },
-  {
-      "country": "Thailand",
-      "filename": "",
-      "population": 69428524,
-      "start": ""
-  },
-  {
       "country": "Turkey",
-      "filename": "",
+      "filename": "turkey",
       "population": 82319724,
       "start": ""
   },
   {
       "country": "Ukraine",
-      "filename": "",
+      "filename": "ukraine",
       "population": 44622516,
       "start": ""
   },
   {
-      "country": "United Kingdom",
-      "filename": "",
-      "population": 66460344,
-      "start": ""
-  },
-  {
       "country": "United States",
-      "filename": "",
+      "filename": "united_states",
       "population": 326687501,
       "start": ""
   },
   {
-      "country": "Venezuela",
-      "filename": "",
-      "population": 28870195,
-      "start": ""
-  },
-  {
-      "country": "Vietnam",
-      "filename": "",
-      "population": 95540395,
-      "start": ""
-  },
-  {
       "country": "Wales",
-      "filename": "",
+      "filename": "wales",
       "population": 3139000,
       "start": ""
   }
