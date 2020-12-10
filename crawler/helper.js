@@ -8,11 +8,26 @@ const {
   findTextBehindIndex
 } = require('../globalHelpers')
 
+const possibleCategoryOpenWords = [
+  {
+    word: 'keywords_pages',
+    openOffset: 0
+  },
+  {
+    word: "<div><a href=\"/pages/category",
+    openOffset: 10
+  },
+  {
+    word: "· <a href=\"/pages/category",
+    openOffset: 0
+  }
+]
+
 // Takes two words that will cut out the first combination found
+// Returns the same html on failure
 const componentSlicerWords = (html, openWord, closeWord) => {
   const componentOpenIndex = html.indexOf(openWord)
   if (componentOpenIndex < 0) {
-    console.error(`Component not found (${openWord})`)
     return html
   }
   const componentCloseIndex = findAbsoluteTextAfterIndex(html, componentOpenIndex, closeWord)
@@ -20,10 +35,10 @@ const componentSlicerWords = (html, openWord, closeWord) => {
 }
 
 // Takes opening word and cuts out X offset after
+// Returns the same html on failure
 const componentSlicerOffset = (html, openWord, offset) => {
   const componentOpenIndex = html.indexOf(openWord)
   if (componentOpenIndex < 0) {
-    console.error(`Component not found (${openWord})`)
     return html
   }
   const componentCloseIndex = componentOpenIndex + offset
@@ -40,8 +55,12 @@ const isCategoryAccepted = (categoryText) => {
   return categoryPass
 }
 
-const getNumberOfLikes = (html) => {
+const getNumberOfLikes = (html, link) => {
   const component = componentSlicerOffset(html, '>Community<', 8000)
+  if (component === html) {
+    console.error(link + 'could not get likes')
+    return false
+  }
   const index = component.indexOf('like')
   const open = findTextBehindIndex(component, index, '<div')
   const close = findAbsoluteTextAfterIndex(component, index, '</div')
@@ -50,24 +69,14 @@ const getNumberOfLikes = (html) => {
 }
 
 const getCategory = (html) => {
-  const possibleWords = [
-    {
-      word: 'keywords_pages',
-      openOffset: 0
-    },
-    {
-      word: "<div><a href=\"/pages/category",
-      openOffset: 10
-    },
-    {
-      word: "· <a href=\"/pages/category",
-      openOffset: 0
-    }
-  ]
   let wordObj;
-  possibleWords.forEach(c => {
+  possibleCategoryOpenWords.forEach(c => {
     if (html.indexOf(c.word) >= 0) wordObj = c
   })
+  if (!wordObj) {
+    console.error(link + 'could not get category')
+    return ''
+  }
   let component = componentSlicerOffset(html, wordObj.word, 400).substring(wordObj.openOffset)
   const open = component.indexOf('>') + 1
   const close = findAbsoluteTextAfterIndex(component, open, '<')
@@ -78,7 +87,8 @@ const getCategory = (html) => {
 const getPageLinks = (html, link) => {
   const component = componentSlicerWords(html, 'Related Pages', '</ul')
   if (component === html) {
-    console.error('Could not find related pages for' + link)
+    console.error(link + ' could not find related pages')
+    return []
   }
   const linksOpenIndices = indexes(component, 'https:')
   return removeDuplicates(
