@@ -4,42 +4,42 @@
     "country": "Australia",
     "population": 24982688,
     "start_market": "https://www.facebook.com/coles/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonaldsAU/"
   },
   {
     "key": "austria",
     "country": "Austria",
     "population": 8840521,
     "start_market": "https://www.facebook.com/Unimarkt/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonaldsAustria/"
   },
   {
     "key": "belgium",
     "country": "Belgium",
     "population": 11433256,
     "start_market": "https://www.facebook.com/Colruyt/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonaldsBelgie/"
   },
   {
     "key": "canada",
     "country": "Canada",
     "population": 37057765,
     "start_market": "https://www.facebook.com/BulkBarnFoods/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonaldsCanada/"
   },
   {
     "key": "czechia",
     "country": "Czechia",
     "population": 10629928,
     "start_market": "https://www.facebook.com/albertceskarepublika/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonalds.CZ/"
   },
   {
     "key": "denmark",
     "country": "Denmark",
     "population": 5793636,
     "start_market": "https://www.facebook.com/bilkadk/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/McDonaldsDanmark/"
   },
   {
     "key": "england",
@@ -53,28 +53,28 @@
     "country": "Estonia",
     "population": 1321977,
     "start_market": "https://www.facebook.com/selvereesti/",
-    "start_fastfood": ""
+    "start_fastfood": "https://www.facebook.com/mcdonalds.estonia/"
   },
   {
     "key": "finland",
     "country": "Finland",
     "population": 5515525,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://facebook.com/KMarketSuomi/",
+    "start_fastfood": "https://www.facebook.com/McDonalds.Suomi/"
   },
   {
     "key": "france",
     "country": "France",
     "population": 66977107,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://facebook.com/geantcasino",
+    "start_fastfood": "https://www.facebook.com/mcdonaldsfrance/"
   },
   {
     "key": "germany",
     "country": "Germany",
     "population": 82905782,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://www.facebook.com/Globus.de/,
+    "start_fastfood": "https://de-de.facebook.com/mcd/"
   },
   {
     "key": "greece",
@@ -84,23 +84,9 @@
     "start_fastfood": ""
   },
   {
-    "key": "greenland",
-    "country": "Greenland",
-    "population": 56025,
-    "start_market": "",
-    "start_fastfood": ""
-  },
-  {
     "key": "hungary",
     "country": "Hungary",
     "population": 9775564,
-    "start_market": "",
-    "start_fastfood": ""
-  },
-  {
-    "key": "iceland",
-    "country": "Iceland",
-    "population": 352721,
     "start_market": "",
     "start_fastfood": ""
   },
@@ -126,23 +112,9 @@
     "start_fastfood": ""
   },
   {
-    "key": "liechtenstein",
-    "country": "Liechtenstein",
-    "population": 37910,
-    "start_market": "",
-    "start_fastfood": ""
-  },
-  {
     "key": "luxembourg",
     "country": "Luxembourg",
     "population": 607950,
-    "start_market": "",
-    "start_fastfood": ""
-  },
-  {
-    "key": "malta",
-    "country": "Malta",
-    "population": 484630,
     "start_market": "",
     "start_fastfood": ""
   },
