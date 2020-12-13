@@ -34,7 +34,7 @@ let validLinks = []
 let ignoredLinks = []
 const globalLinks = require('./global_list.json')
 
-const http = rateLimit(axios.create(), { maxRequests: 3, perMilliseconds: 1000 })
+const http = rateLimit(axios.create(), { maxRequests: 1, perMilliseconds: 2000 })
 
 const onErrorPage = (link) => {
   saveIgnoredText(`${link}`)
@@ -99,4 +99,4 @@ const getLinks = (link, round = 1) => {
     .catch((e) => handleError(e, link))
 }
 
-getLinks("https://www.facebook.com/adidas")
+getLinks("https://www.facebook.com/Eurooptby")
