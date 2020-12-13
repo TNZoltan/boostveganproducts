@@ -12,12 +12,6 @@
       "start": "https://www.facebook.com/Unimarkt/"
   },
   {
-      "country": "Belarus",
-      "filename": "belarus",
-      "population": 9483499,
-      "start": "https://www.facebook.com/Eurooptby"
-  },
-  {
       "country": "Belgium",
       "filename": "belgium",
       "population": 11433256,
@@ -27,31 +21,31 @@
       "country": "Canada",
       "filename": "canada",
       "population": 37057765,
-      "start": ""
+      "start": "https://www.facebook.com/BulkBarnFoods/"
   },
   {
       "country": "Czechia",
       "filename": "czechia",
       "population": 10629928,
-      "start": ""
+      "start": "https://www.facebook.com/albertceskarepublika/"
   },
   {
       "country": "Denmark",
       "filename": "denmark",
       "population": 5793636,
-      "start": ""
+      "start": "https://www.facebook.com/bilkadk/"
   },
   {
       "country": "England",
       "filename": "england",
       "population": 55619400,
-      "start": ""
+      "start": "https://www.facebook.com/Morrisons/"
   },
   {
       "country": "Estonia",
       "filename": "estonia",
       "population": 1321977,
-      "start": ""
+      "start": "https://www.facebook.com/selvereesti/"
   },
   {
       "country": "Finland",
@@ -201,12 +195,6 @@
       "country": "Switzerland",
       "filename": "switzerland",
       "population": 8513227,
-      "start": ""
-  },
-  {
-      "country": "Turkey",
-      "filename": "turkey",
-      "population": 82319724,
       "start": ""
   },
   {
