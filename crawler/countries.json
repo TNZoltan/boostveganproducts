@@ -14,13 +14,6 @@
     "start_fastfood": ""
   },
   {
-    "key": "belarus",
-    "country": "Belarus",
-    "population": 9483499,
-    "start_market": "https://www.facebook.com/Eurooptby",
-    "start_fastfood": ""
-  },
-  {
     "key": "belgium",
     "country": "Belgium",
     "population": 11433256,
@@ -31,35 +24,35 @@
     "key": "canada",
     "country": "Canada",
     "population": 37057765,
-    "start_market": "",
+    "start_market": "https://www.facebook.com/BulkBarnFoods/",
     "start_fastfood": ""
   },
   {
     "key": "czechia",
     "country": "Czechia",
     "population": 10629928,
-    "start_market": "",
+    "start_market": "https://www.facebook.com/albertceskarepublika/",
     "start_fastfood": ""
   },
   {
     "key": "denmark",
     "country": "Denmark",
     "population": 5793636,
-    "start_market": "",
+    "start_market": "https://www.facebook.com/bilkadk/",
     "start_fastfood": ""
   },
   {
     "key": "england",
     "country": "England",
     "population": 55619400,
-    "start_market": "",
+    "start_market": "https://www.facebook.com/Morrisons/",
     "start_fastfood": ""
   },
   {
     "key": "estonia",
     "country": "Estonia",
     "population": 1321977,
-    "start_market": "",
+    "start_market": "https://www.facebook.com/selvereesti/",
     "start_fastfood": ""
   },
   {
@@ -234,13 +227,6 @@
     "key": "switzerland",
     "country": "Switzerland",
     "population": 8513227,
-    "start_market": "",
-    "start_fastfood": ""
-  },
-  {
-    "key": "turkey",
-    "country": "Turkey",
-    "population": 82319724,
     "start_market": "",
     "start_fastfood": ""
   },
