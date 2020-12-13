@@ -1,224 +1,261 @@
 [
   {
-      "country": "Australia",
-      "filename": "australia",
-      "population": 24982688,
-      "start": "https://www.facebook.com/coles/"
+    "key": "australia",
+    "country": "Australia",
+    "population": 24982688,
+    "start_market": "https://www.facebook.com/coles/",
+    "start_fastfood": ""
   },
   {
-      "country": "Austria",
-      "filename": "austria",
-      "population": 8840521,
-      "start": "https://www.facebook.com/Unimarkt/"
+    "key": "austria",
+    "country": "Austria",
+    "population": 8840521,
+    "start_market": "https://www.facebook.com/Unimarkt/",
+    "start_fastfood": ""
   },
   {
-      "country": "Belarus",
-      "filename": "belarus",
-      "population": 9483499,
-      "start": "https://www.facebook.com/Eurooptby"
+    "key": "belarus",
+    "country": "Belarus",
+    "population": 9483499,
+    "start_market": "https://www.facebook.com/Eurooptby",
+    "start_fastfood": ""
   },
   {
-      "country": "Belgium",
-      "filename": "belgium",
-      "population": 11433256,
-      "start": "https://www.facebook.com/Colruyt/"
+    "key": "belgium",
+    "country": "Belgium",
+    "population": 11433256,
+    "start_market": "https://www.facebook.com/Colruyt/",
+    "start_fastfood": ""
   },
   {
-      "country": "Canada",
-      "filename": "canada",
-      "population": 37057765,
-      "start": ""
+    "key": "canada",
+    "country": "Canada",
+    "population": 37057765,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Czechia",
-      "filename": "czechia",
-      "population": 10629928,
-      "start": ""
+    "key": "czechia",
+    "country": "Czechia",
+    "population": 10629928,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Denmark",
-      "filename": "denmark",
-      "population": 5793636,
-      "start": ""
+    "key": "denmark",
+    "country": "Denmark",
+    "population": 5793636,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "England",
-      "filename": "england",
-      "population": 55619400,
-      "start": ""
+    "key": "england",
+    "country": "England",
+    "population": 55619400,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Estonia",
-      "filename": "estonia",
-      "population": 1321977,
-      "start": ""
+    "key": "estonia",
+    "country": "Estonia",
+    "population": 1321977,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Finland",
-      "filename": "finland",
-      "population": 5515525,
-      "start": ""
+    "key": "finland",
+    "country": "Finland",
+    "population": 5515525,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "France",
-      "filename": "france",
-      "population": 66977107,
-      "start": ""
+    "key": "france",
+    "country": "France",
+    "population": 66977107,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Germany",
-      "filename": "germany",
-      "population": 82905782,
-      "start": ""
+    "key": "germany",
+    "country": "Germany",
+    "population": 82905782,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Greece",
-      "filename": "greece",
-      "population": 10731726,
-      "start": ""
+    "key": "greece",
+    "country": "Greece",
+    "population": 10731726,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Greenland",
-      "filename": "greenland",
-      "population": 56025,
-      "start": ""
+    "key": "greenland",
+    "country": "Greenland",
+    "population": 56025,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Hungary",
-      "filename": "hungary",
-      "population": 9775564,
-      "start": ""
+    "key": "hungary",
+    "country": "Hungary",
+    "population": 9775564,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Iceland",
-      "filename": "iceland",
-      "population": 352721,
-      "start": ""
+    "key": "iceland",
+    "country": "Iceland",
+    "population": 352721,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Ireland",
-      "filename": "ireland",
-      "population": 4867309,
-      "start": ""
+    "key": "ireland",
+    "country": "Ireland",
+    "population": 4867309,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "italy",
-      "filename": "italy",
-      "population": 60421760,
-      "start": ""
+    "key": "italy",
+    "country": "italy",
+    "population": 60421760,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Latvia",
-      "filename": "latvia",
-      "population": 1927174,
-      "start": ""
+    "key": "latvia",
+    "country": "Latvia",
+    "population": 1927174,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Liechtenstein",
-      "filename": "liechtenstein",
-      "population": 37910,
-      "start": ""
+    "key": "liechtenstein",
+    "country": "Liechtenstein",
+    "population": 37910,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Luxembourg",
-      "filename": "luxembourg",
-      "population": 607950,
-      "start": ""
+    "key": "luxembourg",
+    "country": "Luxembourg",
+    "population": 607950,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Malta",
-      "filename": "malta",
-      "population": 484630,
-      "start": ""
+    "key": "malta",
+    "country": "Malta",
+    "population": 484630,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Netherlands",
-      "filename": "netherlands",
-      "population": 17231624,
-      "start": ""
+    "key": "netherlands",
+    "country": "Netherlands",
+    "population": 17231624,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "New Zealand",
-      "filename": "new_zealand",
-      "population": 4841000,
-      "start": ""
+    "key": "new_zealand",
+    "country": "New Zealand",
+    "population": 4841000,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Northern Ireland",
-      "filename": "northern_ireland",
-      "population": 1885400,
-      "start": ""
+    "key": "northern_ireland",
+    "country": "Northern Ireland",
+    "population": 1885400,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Norway",
-      "filename": "norway",
-      "population": 5311916,
-      "start": ""
+    "key": "norway",
+    "country": "Norway",
+    "population": 5311916,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Poland",
-      "filename": "poland",
-      "population": 37974750,
-      "start": ""
+    "key": "poland",
+    "country": "Poland",
+    "population": 37974750,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Romania",
-      "filename": "romania",
-      "population": 19466145,
-      "start": ""
+    "key": "romania",
+    "country": "Romania",
+    "population": 19466145,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Scotland",
-      "filename": "scotland",
-      "population": 5424800,
-      "start": ""
+    "key": "scotland",
+    "country": "Scotland",
+    "population": 5424800,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Slovakia",
-      "filename": "slovakia",
-      "population": 5446771,
-      "start": ""
+    "key": "slovakia",
+    "country": "Slovakia",
+    "population": 5446771,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Slovenia",
-      "filename": "slovenia",
-      "population": 2073894,
-      "start": ""
+    "key": "slovenia",
+    "country": "Slovenia",
+    "population": 2073894,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Spain",
-      "filename": "spain",
-      "population": 46796540,
-      "start": ""
+    "key": "spain",
+    "country": "Spain",
+    "population": 46796540,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Sweden",
-      "filename": "sweden",
-      "population": 10175214,
-      "start": ""
+    "key": "sweden",
+    "country": "Sweden",
+    "population": 10175214,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Switzerland",
-      "filename": "switzerland",
-      "population": 8513227,
-      "start": ""
+    "key": "switzerland",
+    "country": "Switzerland",
+    "population": 8513227,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Turkey",
-      "filename": "turkey",
-      "population": 82319724,
-      "start": ""
+    "key": "turkey",
+    "country": "Turkey",
+    "population": 82319724,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "United States",
-      "filename": "united_states",
-      "population": 326687501,
-      "start": ""
+    "key": "united_states",
+    "country": "United States",
+    "population": 326687501,
+    "start_market": "",
+    "start_fastfood": ""
   },
   {
-      "country": "Wales",
-      "filename": "wales",
-      "population": 3139000,
-      "start": ""
+    "key": "wales",
+    "country": "Wales",
+    "population": 3139000,
+    "start_market": "",
+    "start_fastfood": ""
   }
 ]

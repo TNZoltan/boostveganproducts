@@ -7,17 +7,13 @@ const filename = __dirname + "\\countries\\global.txt"
 const ignoredFilename = __dirname + "\\countries\\global_ignored.txt"
 
 /* Settings start */
+const countryKey = 'australia'
 const pagesPerMillion = 10
 /* Settings end */
 
 fs.writeFile(filename, "", (err) => {
   if (err) console.log(err)
   else console.log("Main file is created")
-})
-
-fs.writeFile(ignoredFilename, "", (err) => {
-  if (err) console.log(err)
-  else console.log("Ignored file is created")
 })
 
 const saveText = (text, file = filename) => fs.appendFileSync(file, text + '\r\n')
