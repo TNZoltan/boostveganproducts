@@ -73,8 +73,8 @@
     "key": "germany",
     "country": "Germany",
     "population": 82905782,
-    "start_market": "https://www.facebook.com/Globus.de/,
-    "start_fastfood": "https://de-de.facebook.com/mcd/"
+    "start_market": "https://www.facebook.com/Globus.de/",
+    "start_fastfood": "https://facebook.com/mcd/"
   },
   {
     "key": "greece",
