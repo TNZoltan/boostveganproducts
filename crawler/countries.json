@@ -80,29 +80,29 @@
     "key": "greece",
     "country": "Greece",
     "population": 10731726,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://www.facebook.com/galaxias.sm/",
+    "start_fastfood": "https://www.facebook.com/mcdonalds.restaurants.gr/"
   },
   {
     "key": "hungary",
     "country": "Hungary",
     "population": 9775564,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://www.facebook.com/cbaboltok/",
+    "start_fastfood": "https://www.facebook.com/mcdonaldshungary/"
   },
   {
     "key": "ireland",
     "country": "Ireland",
     "population": 4867309,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://www.facebook.com/SuperValuIreland/",
+    "start_fastfood": "https://www.facebook.com/McDonaldsIreland/"
   },
   {
     "key": "italy",
     "country": "italy",
     "population": 60421760,
-    "start_market": "",
-    "start_fastfood": ""
+    "start_market": "https://www.facebook.com/Bennet.UnaSpesaDaVivere/",
+    "start_fastfood": "https://www.facebook.com/McDonaldsItalia/"
   },
   {
     "key": "latvia",
