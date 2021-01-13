@@ -1,6 +1,7 @@
 const helper = require('./helper')
 const axios = require('axios')
 const fs = require("fs")
+const rateLimit = require('axios-rate-limit')
 
 /* Settings start */
 const countryKey = 'estonia'
@@ -10,6 +11,8 @@ const pagesPerMillion = 10
 const countries = require('./countries.json')
 const country = countries.find(c => c.key === countryKey)
 const population = country.population
+
+const http = rateLimit(axios.create(), { maxRequests: 2, perMilliseconds: 1000 })
 
 const filename = __dirname + "\\countries\\" + country.key + ".txt"
 const ignoredFilename = __dirname + "\\countries\\ignored\\global.txt"
@@ -95,6 +98,26 @@ const handleError = (error, link) => {
   }
 }
 
+const generateWaitTime = (round) => {
+  const genMinMax = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+  const toMs = (val) => val * genMinMax(1,1000)
+   switch (round) {
+    case 1:
+      return toMs(genMinMax(1,3))
+    case 2:
+      return toMs(genMinMax(1,15) + genMinMax(1,5))
+    case 3:
+      return toMs(genMinMax(2,30) + genMinMax(5,20))
+    case 4:
+      return toMs(genMinMax(4,100) + genMinMax(10,30))
+    case 5:
+      return toMs(genMinMax(10,300) + genMinMax(15,40))
+    case 6:
+      console.log('Round 6 reached')
+      return 999999
+  }
+}
+
 const getLinks = (link, round = 1) => {
   const alreadySaved = ignoredLinks.includes(link) || validLinks.includes(link) || globalLinks.includes(link)
   if (alreadySaved) return
@@ -102,12 +125,11 @@ const getLinks = (link, round = 1) => {
   if (requestLimit < countRequests) {
     return
   }
-  const waitTime = Math.floor(Math.random() * Math.pow(3, round)) + 2
   setTimeout(() => {
-    axios.get(link, config)
-    .then(res => handleResult(link, res.data.toString(), round))
-    .catch((e) => handleError(e, link))
-  }, waitTime * 1000)
+    http.get(link, config)
+      .then(res => handleResult(link, res.data.toString(), round))
+      .catch((e) => handleError(e, link))
+  }, generateWaitTime(round))
 }
 
 const run = () => {
