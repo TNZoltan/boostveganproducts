@@ -1,27 +1,14 @@
 const acceptedCategories = require('./accepted_categories.json')
+const categories = require('./categories.json')
 
 const {
   findAbsoluteTextAfterIndex,
   indexes,
   removeURLParameters,
   removeDuplicates,
-  findTextBehindIndex
+  findTextBehindIndex,
+  titleCase
 } = require('../globalHelpers')
-
-const possibleCategoryOpenWords = [
-  {
-    word: 'keywords_pages',
-    openOffset: 0
-  },
-  {
-    word: "<div><a href=\"/pages/category",
-    openOffset: 10
-  },
-  {
-    word: "· <a href=\"/pages/category",
-    openOffset: 0
-  }
-]
 
 const componentSlicerWords = (html, openWord, closeWord) => {
   const componentOpenIndex = html.indexOf(openWord)
@@ -41,12 +28,14 @@ const componentSlicerOffset = (html, openWord, offset) => {
   return html.substring(componentOpenIndex, componentCloseIndex)
 }
 
-const isCategoryAccepted = (categoryText) => {
+const isCategoryAccepted = (categoryArray) => {
   let categoryPass = false
-  acceptedCategories.forEach(category => {
-    if (categoryText.indexOf(category) >= 0) {
-      categoryPass = true
-    }
+  acceptedCategories.forEach(accepted => {
+    categoryArray.forEach(category => {
+      if (category === accepted) {
+        categoryPass = true
+      }
+    })
   })
   return categoryPass
 }
@@ -54,7 +43,7 @@ const isCategoryAccepted = (categoryText) => {
 const getNumberOfLikes = (html, link) => {
   const component = componentSlicerOffset(html, '>Community<', 8000)
   if (component === html) {
-    console.error(link + 'could not get likes')
+    console.error(link + ' could not get likes')
     return false
   }
   const index = component.indexOf('like')
@@ -64,20 +53,22 @@ const getNumberOfLikes = (html, link) => {
   return parseInt(sentence.replace(/\D/g, ""))
 }
 
-const getCategory = (html) => {
-  let wordObj;
-  possibleCategoryOpenWords.forEach(c => {
-    if (html.indexOf(c.word) >= 0) wordObj = c
+const getCategories = (html, link) => {
+  const component = componentSlicerOffset(html, '>About<', 12000)
+  let found = []
+  categories.forEach(category => {
+    if (component.indexOf(category) > 0) {
+      found.push(category)
+    }
+    if (component.indexOf(category.toUpperCase()) > 0) {
+      found.push(titleCase(category))
+    }
   })
-  if (!wordObj) {
-    console.error(link + 'could not get category')
-    return ''
+  if (found.length === 0) {
+    console.error(link + ' could not get categories')
+    return false
   }
-  let component = componentSlicerOffset(html, wordObj.word, 400).substring(wordObj.openOffset)
-  const open = component.indexOf('>') + 1
-  const close = findAbsoluteTextAfterIndex(component, open, '<')
-  const sentence = component.substring(open, close)
-  return sentence.replace('amp;', '')
+  return categories
 }
 
 const getPageLinks = (html, link) => {
@@ -97,6 +88,6 @@ const getPageLinks = (html, link) => {
 module.exports = {
   getNumberOfLikes,
   getPageLinks,
-  getCategory,
+  getCategories,
   isCategoryAccepted
 }

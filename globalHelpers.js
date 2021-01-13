@@ -32,7 +32,7 @@ function indexes(text, word) {
     return [];
   }
   if (!word) {
-    return text.split('').map(function(_, i) { return i; });
+    return text.split('').map(function (_, i) { return i; });
   }
   var result = [];
   for (i = 0; i < text.length; ++i) {
@@ -50,19 +50,27 @@ const removeURLParameters = (url) => {
 }
 
 const removeDuplicates = (a) => {
-  var prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
+  var prims = { "boolean": {}, "number": {}, "string": {} }, objs = [];
 
-  return a.filter(function(item) {
-      var type = typeof item;
-      if(type in prims)
-          return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
-      else
-          return objs.indexOf(item) >= 0 ? false : objs.push(item);
+  return a.filter(function (item) {
+    var type = typeof item;
+    if (type in prims)
+      return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
+    else
+      return objs.indexOf(item) >= 0 ? false : objs.push(item);
   });
 }
 
+const titleCase = (string) => {
+  var sentence = string.toLowerCase().split(" ");
+  for (var i = 0; i < sentence.length; i++) {
+    sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+  }
+  return sentence.join(" ");
+}
+
 module.exports = {
-  getFilenameDate, 
+  getFilenameDate,
   getDate,
   removeTags,
   findTextBehindIndex,
@@ -71,5 +79,6 @@ module.exports = {
   getNextWordIndex,
   indexes,
   removeURLParameters,
-  removeDuplicates
+  removeDuplicates,
+  titleCase
 }
